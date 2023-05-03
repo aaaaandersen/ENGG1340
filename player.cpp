@@ -1,60 +1,79 @@
 #include "player.h"
 
-// Struct to store player data
-//{std::string name;int HP;int EXP;int weapon;int armour;int trinket;}
-player::playerData playerStats = { "", 0, 0, 0, 0, 0, };
+player::playerData playerStats = { "", 0, 0, 0, 0 };
 
-// Struct to store player items
-//{std::string item1;int num;std::string descriptionl}
 player::itemData playerItems[] = {
     {"Health potion", 0, "Restores 10% of the player's health."},
     {"Greater health potion", 0, "Restores 20% of the player's health."},
-    {"Critical strike potion", 0, "Guarantees that the player's next attack will be a critical hit."},
     {"Defense potion", 0, "Grants the player immunity to the next enemy attack."},
 };
 
-// Struct to store armoury data
-//{std::string name;int stats;std::string description;}
-//to be added
-player::itemData armouryData[] = {
-    {"", 0, ""},
-    {"", 0, ""},
-    {"", 0, ""},
-    {"", 0, ""},
+player::armouryData armourData[] = {
+    {"Tattered Iron Armor", 20, "This suit of armor appears to have been through many battles, with rust and cracks covering its surface. Although it is battered and worn, it still provides some degree of protection."},
+    {"Steel Plate Armor", 40, "This suit of armor is made from high-quality steel, providing stronger defense. It incorporates some heavy metal construction, allowing the wearer to be more agile in combat."},
+    {"Enchanted Forge Plate Armor", 60, "This suit of armor is forged through magic, providing excellent protection as well as additional strength and speed to the wearer. It seems to emanate a mysterious energy."},
+    {"Armor of the Dragon Lord", 80, "This mysterious armor is made from the body of a legendary dragon, possessing unparalleled strength and defense. The wearer can feel the power of the dragon coursing through their body while wearing it."},
 };
 
-// Function to modify player stats
-// Takes an index and a value as parameters
-// The index specifies which member variable of playerStats to modify
-// The value can be either an integer or a string
-player::playerData modify_player_stats(int index, std::string value) {
+player::armouryData weaponData[] = {
+    {"Rusty Sword of Copper and Iron", 20, "The blade of this sword looks very worn, even rusty. But although it may not look like much, it can deliver devastating blows to low-level enemies."},
+    {"Steel Longsword", 40, "Crafted from high-quality steel, this longsword is sharp and durable. Its power surpasses that of ordinary weapons, making it a valuable ally for any warrior."},
+    {"Obsidian Battleaxe", 60, "The head of this battleaxe is made of obsidian, which looks incredibly sharp. It can easily cut through tough metal or stone, dealing massive damage."},
+    {"Holy Dragon Slayer Sword", 80, "Legend has it that this sword was used by a great hero to defeat a dragon. It is a sacred weapon capable of dealing devastating blows to any dragon-type enemy."},
+};
+
+player::playerData player::modify_player_stats(int index, std::string value) {
     if (index == 0) {
         playerStats.name = value;
     }
     else {
-        // If the name is not being modified, the value must be converted to the appropriate type
         if (index == 1) {
-            playerStats.HP = stoi(value);
+            playerStats.HP = std::stoi(value);
         }
         else if (index == 2) {
-            playerStats.EXP = stoi(value);
+            playerStats.EXP = std::stoi(value);
         }
         else if (index == 3) {
-            playerStats.weapon = stoi(value);
+            playerStats.weapon = std::stoi(value);
         }
         else if (index == 4) {
-            playerStats.armour = stoi(value);
+            playerStats.armour = std::stoi(value);
         }
-        else if (index == 5) {
-            playerStats.trinket = stoi(value);
-        }
+    }
+    return playerStats;
+}
+
+player::itemData player::change_item_amount(itemData* items, int itemIndex, int amount) {
+    items[itemIndex].num += amount;
+    return items[itemIndex];
+}
+
+int player::get_weapon_data(int weaponIndex) {
+    if (playerStats.weapon = 0) {
+        return 20;
+    }
+    else if (playerStats.weapon = 1) {
+        return 40;
+    }
+    else if (playerStats.weapon = 2) {
+        return 60;
+    }
+    else if (playerStats.weapon = 3) {
+        return 80;
     }
 }
 
-// Function to change the amount of an item in the player's inventory
-// Takes a pointer to the player's item list, an item index, and an amount as parameters
-// Finds the item in the list with the given index and increases or decreases its quantity by the given amount
-// If the amount is negative, the item's quantity is decreased
-player::itemData change_item_amount(player::itemData* items, int itemIndex, int amount) {
-    items[itemIndex].num += amount;
+int player::get_armour_data(int armourIndex) {
+    if (playerStats.armour = 0) {
+        return 20;
+    }
+    else if (playerStats.armour = 1) {
+        return 40;
+    }
+    else if (playerStats.armour = 2) {
+        return 60;
+    }
+    else if (playerStats.armour = 3) {
+        return 80;
+    }
 }
