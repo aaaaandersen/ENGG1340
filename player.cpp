@@ -49,31 +49,31 @@ player::itemData player::change_item_amount(itemData* items, int itemIndex, int 
 }
 
 int player::get_weapon_data(int weaponIndex) {
-    if (playerStats.weapon = 0) {
+    if (playerStats.weapon == 0) {
         return 20;
     }
-    else if (playerStats.weapon = 1) {
+    else if (playerStats.weapon == 1) {
         return 40;
     }
-    else if (playerStats.weapon = 2) {
+    else if (playerStats.weapon == 2) {
         return 60;
     }
-    else if (playerStats.weapon = 3) {
+    else if (playerStats.weapon == 3) {
         return 80;
     }
 }
 
 int player::get_armour_data(int armourIndex) {
-    if (playerStats.armour = 0) {
+    if (playerStats.armour == 0) {
         return 20;
     }
-    else if (playerStats.armour = 1) {
+    else if (playerStats.armour == 1) {
         return 40;
     }
-    else if (playerStats.armour = 2) {
+    else if (playerStats.armour == 2) {
         return 60;
     }
-    else if (playerStats.armour = 3) {
+    else if (playerStats.armour == 3) {
         return 80;
     }
 }
