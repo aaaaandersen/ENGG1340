@@ -5,6 +5,22 @@
 #include "player.h"
 
 void saveGame(const player::playerData &playerData, const std::string &filename) {
+    void saveGame(const player::playerData &playerData, const std::string &filename) {
+    std::ofstream outputFile(filename);
+
+    if (!outputFile.is_open()) {
+        std::cerr << "Error opening the save file: " << filename << std::endl;
+        exit(1); 
+    }
+
+    outputFile << playerData.name << std::endl;
+    outputFile << playerData.HP << std::endl;
+    outputFile << playerData.EXP << std::endl; 
+    outputFile << playerData.weapon << std::endl;
+    outputFile << playerData.armour << std::endl;
+
+    outputFile.close();
+    
     // Your existing saveGame function implementation
 }
 
