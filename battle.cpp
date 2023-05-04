@@ -19,7 +19,7 @@ void startBattle(int mapIndex) {
     // Create instances of player and enemy
     player myPlayer;
     enemyData enemy = get_enemy_data(enemyIndex, mapIndex);
-
+    
     // Calculate player's attack and defense values
     int playerAtk = (myPlayer.playerStats.EXP / 20) + myPlayer.get_weapon_data(myPlayer.playerStats.weapon);
     int playerDef = (myPlayer.playerStats.EXP / 20) + myPlayer.get_armour_data(myPlayer.playerStats.weapon);
@@ -48,13 +48,13 @@ void startBattle(int mapIndex) {
 
                     int itemIndex;
                     while (true) {
-                        cout << "Please select a item (enter the corresponding number)£º" << endl;
+                        cout << "Please select a item (enter the corresponding number)ï¼š" << endl;
                         for (int i = 0; i < sizeof(myPlayer.playerItems) / sizeof(myPlayer.playerItems[0]); i++) {
                             cout << i + 1 << ". " << myPlayer.playerItems[i].name << endl;
                         }
                         cin >> itemIndex;
 
-                        // È·ÈÏÍæ¼ÒÊäÈëµÄÊı×ÖÊÇ·ñÓĞĞ§
+                        // ç¡®è®¤ç©å®¶è¾“å…¥çš„æ•°å­—æ˜¯å¦æœ‰æ•ˆ
                         if (itemIndex < 1 || itemIndex > sizeof(myPlayer.playerItems) / sizeof(myPlayer.playerItems[0])) {
                             cout << "Invalid input!" << endl;
                         }
@@ -63,10 +63,10 @@ void startBattle(int mapIndex) {
                         }
                     }
 
-                    // ¸ù¾İÍæ¼ÒÑ¡ÔñµÄµÀ¾ß£¬Ö´ĞĞÏàÓ¦µÄ²Ù×÷
+                    // æ ¹æ®ç©å®¶é€‰æ‹©çš„é“å…·ï¼Œæ‰§è¡Œç›¸åº”çš„æ“ä½œ
                     switch (itemIndex) {
                     case 1:
-                        // Ê¹ÓÃHealth potion
+                        // ä½¿ç”¨Health potion
                         if (myPlayer.playerItems[0].num == 0) {
                             cout << "You have no Health potion" << endl;
                             break;
@@ -78,7 +78,7 @@ void startBattle(int mapIndex) {
                             break;
                         }
                     case 2:
-                        // Ê¹ÓÃGreater health potion
+                        // ä½¿ç”¨Greater health potion
                         if (myPlayer.playerItems[1].num == 0) {
                             cout << "You have no Greater health potion" << endl;
                             break;
@@ -90,7 +90,7 @@ void startBattle(int mapIndex) {
                             break;
                         }
                     case 3:
-                        // Ê¹ÓÃDefense potion
+                        // ä½¿ç”¨Defense potion
                         if (myPlayer.playerItems[2].num == 0) {
                             cout << "You have no Defense potion potion" << endl;
                             break;
