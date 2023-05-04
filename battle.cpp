@@ -7,7 +7,7 @@
 
 using namespace std;
 
-void startBattle(int mapIndex) {
+int startBattle(int mapIndex) {
     // Set the random number seed
     srand(time(NULL));
 
