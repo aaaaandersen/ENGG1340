@@ -1,6 +1,6 @@
 #include "player.h"
 
-player::playerData playerStats = { "", 0, 0, 0, 0 };
+player::playerData playerStats;
 
 player::itemData playerItems[] = {
     {"Health potion", 0, "Restores 10% of the player's health."},
