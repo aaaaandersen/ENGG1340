@@ -1,9 +1,10 @@
 ### Introduction of our team
 GROUP NUMBER: 73
-TEAM MEMBERS:Chen Junjie 3036079502
-             Gu Shenghao  3036103638
-             Tse Siu Yeung  3036067690
-             Zhang Diyu  3036104058
+TEAM MEMBERS:
+Chen Junjie 3036079502
+Gu Shenghao  3036103638
+Tse Siu Yeung  3036067690
+Zhang Diyu  3036104058
 
              
 ### Introduction of our game
