@@ -1,48 +1,47 @@
 #pragma once
-#include "CheckerBoard.h"
+#include "CheckerBoard.h"  
 #include "ChessNode.h"
 #include <fstream>
-#include <string>
+#include <string>  
 #include <ctime>
 #include <iostream>
 #include <stdlib.h>
-#define BLACK 1
+#define BLACK 1  
 #define WHITE 2
-using namespace std;
+using namespace std;  
 
-class Manager 
+class Manager  
 {
 public:
-    // 初始化棋盘大小
+    // Initialize the size of the chessboard
     Manager();
-    // 运行游戏
+    // Run the game
     void Run();
-    // 判断棋盘大小是否正确
+    // Determine if the size of the chessboard is correct
     bool SizeIsRight();
-    // 删除棋盘
+    // Delete chessboard
     void DeleteCheckerBoard();
     void DeleteCheckerBoard_Max();
-    // 开始新的游戏
-    void RunNewGame();
-    // 进行现在游戏
+    // Start a new game 
+    void RunNewGame();  
+    // Continue the current game
     void RunNowGame();
-    // 设置棋盘大小
-    void SetSize();
-    // 展示游戏开发信息
-    void ShowGameInf();
-    // 判断五子连线
-    bool JudgeGame();
-    // 储存游戏进度
-    void StorageRouteMax();
-    // 读取游戏路径
-    void ReadRoute();
-    // 人机大战
+    // Set the size of the chessboard
+    void SetSize();   
+    // Display game development information
+    void ShowGameInf(); 
+    // Judge five in a row
+    bool JudgeGame();   
+    // Save game progress
+    void StorageRouteMax();  
+    // Read game path
+    void ReadRoute();  
+    // Human vs AI 
     void AI_and_Person();
 
-    // 延时
-    void Delay(int time);
+    // Delay
+    void Delay(int time);  
 public:
-    int CheckerBoardSize;
-    CheckerBoard* checkerboard;
+   int CheckerBoardSize; 
+   CheckerBoard* checkerboard;
 };
-
