@@ -1,4 +1,4 @@
-#### Introduction of our team
+### Introduction of our team
 GROUP NUMBER: 73
 
 TEAM MEMBERS:
@@ -10,7 +10,7 @@ Zhang Diyu  3036104058
 
 
 
-#### Introduction of our game
+### Introduction of our game
 Gobang————Players take turn to place a piece of the certain type in  
           the board, and the first person to connect the pieces in a line wins;
 
@@ -23,7 +23,7 @@ Gobang————Players take turn to place a piece of the certain type in
 
 
 
-#### How we meet the 5 requirements
+### How we meet the 5 requirements
 1. •  Generation of random game sets or events
 
 In order to implement a random set of games or events for this project, we deliberately set up an extra function in the our game - a human-computer match, i.e. the player plays against the computer, while the computer drops the pieces in a random way, completing the above requirement.
@@ -50,7 +50,7 @@ The classes are used to encapsulate the pieces, the board and the user, so that 
  
 
 
-#### Compile Instructions
+### Compile Instructions
 
 Run ```make ``` to compile the game.
 
