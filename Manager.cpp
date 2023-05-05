@@ -113,7 +113,7 @@ void Manager::RunNewGame()
 	
 	while (1)
 	{
-		// ∫⁄∆Âœ»
+		// Black go first
 		if (checkerboard->ShowRecentStep().GetPlayerId() == -1)
 		{
 			id = BLACK;
@@ -131,7 +131,7 @@ void Manager::RunNewGame()
 			cout << "Program error, please open the game again" << endl;
 		}
 
-		cout << "The player " << id << "£¨Please enter your move later coordinates£∫";
+		cout << "The player " << id << "ÔºåPlease enter your move later coordinatesÔºö";
 		cin >> x >> y;
 
 		Delay(1000);
@@ -190,7 +190,7 @@ void Manager::RunNowGame()
 
 	while (1)
 	{
-		// ∫⁄∆Âœ»
+		// Black go first
 		if (checkerboard->ShowRecentStep().GetPlayerId() == -1)
 		{
 			id = BLACK;
@@ -208,7 +208,7 @@ void Manager::RunNowGame()
 			cout << "Program error, please open the game again" << endl;
 		}
 
-		cout << "The player" << id << "£¨Please enter your move later coordinates:";
+		cout << "The player" << id << "ÔºåPlease enter your move later coordinates:";
 		cin >> x >> y;
 		
 		Delay(1000);
@@ -303,7 +303,7 @@ void Manager::ShowGameInf()
 
 bool Manager::JudgeGame()
 {
-	// ≈–∂œ∫·≈≈
+	// Judging horizontal rows
 	for (int i = 1; i <= CheckerBoardSize; i++)
 	{
 		for (int j = 1; j <= CheckerBoardSize-4; j++)
@@ -319,7 +319,7 @@ bool Manager::JudgeGame()
 		}
 	}
 	
-	//≈–∂œ ˙≈≈
+	//Judging vertical rows
 	for (int i = 1; i <= CheckerBoardSize - 4; i++)
 	{
 		for (int j = 1; j <= CheckerBoardSize ; j++)
@@ -335,7 +335,7 @@ bool Manager::JudgeGame()
 		}
 	}
 
-	//≈–∂œ÷˜∂‘Ω«œﬂ
+	//Judging the main diagonal
 	for (int i = CheckerBoardSize; i >= 5 ; i--)
 	{
 		for (int j = 1; j <= CheckerBoardSize - 4; j++)
@@ -351,7 +351,7 @@ bool Manager::JudgeGame()
 		}
 	}
 
-	//≈–∂œ∏∫∂‘Ω«œﬂ
+	//Judging the negative diagonal
 	for (int i = 1, j = CheckerBoardSize; i <= CheckerBoardSize - 4; i++)
 	{
 		for (int j = CheckerBoardSize; j >= CheckerBoardSize - 4; j--)
@@ -453,7 +453,7 @@ void Manager::AI_and_Person()
 
 	while (1)
 	{
-		// ∫⁄∆Âœ»
+		// Black go first
 		if (checkerboard->ShowRecentStep().GetPlayerId() == -1)
 		{
 			id = BLACK;
@@ -502,7 +502,7 @@ void Manager::AI_and_Person()
 		}
 		else
 		{
-			cout << "The player" << "£¨Please enter your move later coordinates:";
+			cout << "The player" << "ÔºåPlease enter your move later coordinates:";
 			cin >> x >> y;
 
 			Delay(1000);
@@ -540,7 +540,7 @@ void Manager::AI_and_Person()
 				cout << "Does not appear the winner." << endl;
 				continue;
 			}
-			cout << "The player" << "£¨Please enter your move later coordinates:";
+			cout << "The player" << "ÔºåPlease enter your move later coordinates:";
 			cin >> x >> y;
 
 			Delay(1000);
