@@ -1,4 +1,4 @@
-### Introduction of our team
+#### Introduction of our team
 GROUP NUMBER: 73
 
 TEAM MEMBERS:
@@ -24,16 +24,25 @@ Gobang————Players take turn to place a piece of the certain type in
 
 
 #### How we meet the 5 requirements
-1. In order to implement a random set of games or events for this project, we deliberately set up an extra function in the our game - a human-computer match, i.e. the player plays against the computer, while the computer drops the pieces in a random way, completing the above requirement.
+1. •  Generation of random game sets or events
 
-2. The data structure for storing the game state is mainly the stack in the STL template. The coordinates of each piece will go into the stack, and then the stack will be pressed and popped to make the pieces appear on the board.
+In order to implement a random set of games or events for this project, we deliberately set up an extra function in the our game - a human-computer match, i.e. the player plays against the computer, while the computer drops the pieces in a random way, completing the above requirement.
 
-3. Dynamic memory management is mainly used to set the size of the board. The game has requirements: 
+2. •  Data structures for storing game status
+
+The data structure for storing the game state is mainly the stack in the STL template. The coordinates of each piece will go into the stack, and then the stack will be pressed and popped to make the pieces appear on the board.
+
+3. •  Dynamic memory management
+
+Dynamic memory management is mainly used to set the size of the board. The game has requirements: 
 Each time you start the game you will be asked to set the size of the board, so this size is achieved by using new to open up a section of memory and create a two-dimensional array for the board, which avoids wasting memory. 
 
-4. The input and output of the file is mainly used to save the game state. When saving the game, it will first determine if the game currently exists. If it does, it will be saved. If not, it will indicate that the board does not currently exist. Besides, the main menu of the game has the input and deletion options of the file.
+4. •  File input/output (e.g., for loading/saving game status)
 
-5. The classes are used to encapsulate the pieces, the board and the user, so that it is clearer when the functions are called, and also provides a convenient way to debug the code. The following are the classes we use in the game.
+The input and output of the file is mainly used to save the game state. When saving the game, it will first determine if the game currently exists. If it does, it will be saved. If not, it will indicate that the board does not currently exist. Besides, the main menu of the game has the input and deletion options of the file.
+
+5.  •  Program codes in multiple files
+The classes are used to encapsulate the pieces, the board and the user, so that it is clearer when the functions are called, and also provides a convenient way to debug the code. The following are the classes we use in the game.
  `class CheckerBoard`
  `class ChessNode`
  `class Manager`
@@ -41,7 +50,7 @@ Each time you start the game you will be asked to set the size of the board, so 
  
 
 
-## Compile Instructions
+#### Compile Instructions
 
 Run ```make ``` to compile the game.
 
