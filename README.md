@@ -7,8 +7,10 @@ Gu Shenghao  3036103638
 Tse Siu Yeung  3036067690
 Zhang Diyu  3036104058
 
-             
-### Introduction of our game
+
+
+
+#### Introduction of our game
 Gobang————Players take turn to place a piece of the certain type in  
           the board, and the first person to connect the pieces in a line wins;
 
@@ -17,6 +19,8 @@ Gobang————Players take turn to place a piece of the certain type in
           If player enters coordinates for a piece that exceed the size of the board, he has to return to the menu by entering '0';
 
           Two modes to choose: player VS player or player VS computer;
+
+
 
 
 #### How we meet the 5 requirements
@@ -33,6 +37,19 @@ Each time you start the game you will be asked to set the size of the board, so 
  `class CheckerBoard`
  `class ChessNode`
  `class Manager`
+ 
+ 
+
+
+## Compile Instructions
+
+Run ```make ``` to compile the game.
+
+Do ```./chess``` to start the game.
+
+ 
+ 
+ 
 
 
 
