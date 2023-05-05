@@ -16,10 +16,10 @@ void Manager::Run()
 		std::cout << "(3) Set the board size" <<endl;
 		std::cout << "(4) Delete the current game" << endl;
 		std::cout << "(5) Enter the current game" << endl;
-		std::cout << "(6) Apricot watching game related information" << endl;
+		std::cout << "(6) watching game related information" << endl;
 		std::cout << "(7) The current game archive" << endl;
 		std::cout << "(8) Poems take a left" << endl;
-		std::cout << "(9) The man-machine war" << endl;
+		std::cout << "(9) man VS machine" << endl;
 		std::cout << "Enter the Numbers and press enter: ";
 		cin >> choice;
 		std::cout << endl;
@@ -54,7 +54,7 @@ void Manager::Run()
 		else if (choice == 1)
 		{
 			system("color 3D");
-			cout << "I wish you have a good time!";			
+			cout << "wish you have a good time!";			
 			Delay(2000);
 			exit(0);
 		}
