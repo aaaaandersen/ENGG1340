@@ -1,4 +1,4 @@
-#include "ChessNode1.h"
+#include "ChessNode.h"
 
 ChessNode::ChessNode()
 {
