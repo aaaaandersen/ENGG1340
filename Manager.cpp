@@ -290,7 +290,7 @@ void Manager::SetSize()
 void Manager::ShowGameInf()
 {
 	cout << "  Size of the current game " << CheckerBoardSize << endl;
-	cout << "    Game developers: XXX" << endl;
+	cout << "    Game developers: Chen Junjie,Gu Shenghao,Tse Siu Yeung,Zhang Diyu" << endl;
 	cout << "    The game version:1.0.0" << endl;
 	cout << "Whether the current board: ";
 	if (checkerboard == nullptr) {
