@@ -71,10 +71,11 @@ The `Manager` class also has two public member variables:
 
 
 ### Compile Instructions
+Switch to the games folder in the terminal
 
-Run ```make ``` to compile the game.
+input ```make ``` to compile the game.
 
-Do ```./chess``` to start the game.
+input ```./chess``` to start the game.
 
  
  
