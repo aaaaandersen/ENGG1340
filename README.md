@@ -47,6 +47,26 @@ The classes are used to encapsulate the pieces, the board and the user, so that 
  `class ChessNode`
  `class Manager`
  
+ ### Brief overview of the `Manager.cpp` class and its methods
+ 
+1. `Manager()`: Constructor to initialize the chessboard size.
+2. `Run()`: Executes the game.
+3. `SizeIsRight()`: Checks if the chessboard size is correct.
+4. `DeleteCheckerBoard()`: Deletes the current chessboard.
+5. `DeleteCheckerBoard_Max()`: Deletes the maximum chessboard.
+6. `RunNewGame()`: Starts a new game.
+7. `RunNowGame()`: Resumes the current game.
+8. `SetSize()`: Sets the size of the chessboard.
+9. `ShowGameInf()`: Displays game-related information.
+10. `JudgeGame()`: Determines the game outcome.
+11. `StorageRouteMax()`: Stores the game route.
+12. `ReadRoute()`: Reads the game route.
+13. `AI_and_Person()`: Handles gameplay between the AI and a person.
+14. `Delay(int time)`: Adds a delay to the game.
+
+The `Manager` class also has two public member variables:
+1. `int CheckerBoardSize`: Represents the size of the chessboard.
+2. `CheckerBoard* checkerboard`: A pointer to a `CheckerBoard` object representing the game's chessboard.
  
 
 
