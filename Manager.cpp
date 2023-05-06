@@ -11,15 +11,15 @@ void Manager::Run()
 	while (choice != 1) {
 		system("color 7");
 		std::cout << "\t\tGobang game menu" << endl;
-		std::cout << "(1) close the client" << endl;
+		std::cout << "(1) Close the client" << endl;
 		std::cout << "(2) Start a new game" << endl;
 		std::cout << "(3) Set the board size" <<endl;
 		std::cout << "(4) Delete the current game" << endl;
 		std::cout << "(5) Enter the current game" << endl;
-		std::cout << "(6) watching game related information" << endl;
+		std::cout << "(6) Display game-related information" << endl;
 		std::cout << "(7) The current game archive" << endl;
-		std::cout << "(8) Poems take a left" << endl;
-		std::cout << "(9) man VS machine" << endl;
+		std::cout << "(8) Display the stored route " << endl;
+		std::cout << "(9) The man-machine war" << endl;
 		std::cout << "Enter the Numbers and press enter: ";
 		cin >> choice;
 		std::cout << endl;
@@ -54,7 +54,7 @@ void Manager::Run()
 		else if (choice == 1)
 		{
 			system("color 3D");
-			cout << "wish you have a good time!";			
+			cout << "I wish you have a good time!";			
 			Delay(2000);
 			exit(0);
 		}
@@ -113,7 +113,7 @@ void Manager::RunNewGame()
 	
 	while (1)
 	{
-		// Black go first
+		//       
 		if (checkerboard->ShowRecentStep().GetPlayerId() == -1)
 		{
 			id = BLACK;
@@ -131,14 +131,14 @@ void Manager::RunNewGame()
 			cout << "Program error, please open the game again" << endl;
 		}
 
-		cout << "The player " << id << "，Please input the coordinates of the next move you want to make：";
+		cout << "The player " << id << "  Please enter the coordinates of the moving piece  ";
 		cin >> x >> y;
 
 		Delay(1000);
 		system("cls");
 		if (x > CheckerBoardSize || y > CheckerBoardSize || x < 1 || y < 1)
 		{
-			cout << "The next move is wrong, please input again! (you can return to the menu according to '0')" << endl;
+			cout << "invalid coordinates, please input again! (you can return to the menu by entering '0')" << endl;
 			int choice;
 			cin >> choice;
 			if (choice == 0)
@@ -160,13 +160,13 @@ void Manager::RunNewGame()
 		{
 			system("color 7");
 			system("cls");
-			cout << "Victory" << endl;
+			cout << "The game victory" << endl;
 			Delay(2000);
 			break;
 		}
 		else 
 		{
-			cout << "The game is not over, please continue." << endl;
+			cout << "No winner" << endl;
 			continue;
 		}
 	}
@@ -182,7 +182,7 @@ void Manager::RunNowGame()
 
 	if (checkerboard == nullptr)
 	{
-		cout << "There is no game running in the current background." << endl;
+		cout << "In the current background, game is not running" << endl;
 		return;
 	}
 	system("cls");
@@ -190,7 +190,7 @@ void Manager::RunNowGame()
 
 	while (1)
 	{
-		// Black go first
+		//       
 		if (checkerboard->ShowRecentStep().GetPlayerId() == -1)
 		{
 			id = BLACK;
@@ -208,14 +208,14 @@ void Manager::RunNowGame()
 			cout << "Program error, please open the game again" << endl;
 		}
 
-		cout << "The player" << id << "，Please input the coordinates of the next move you want to make:";
+		cout << "The player" << id << "  Please enter the coordinates of the moving piece";
 		cin >> x >> y;
 		
 		Delay(1000);
 		system("cls");
 		if (x > CheckerBoardSize || y > CheckerBoardSize || x < 1 || y < 1)
 		{
-			cout << "The next move is wrong, please input again! (according to, 0 'return to menu)" << endl;
+			cout << "invalid coordinates, please input again! (you can return to the menu by entering '0')" << endl;
 			int choice;
 			cin >> choice;
 			if (choice == 0)
@@ -237,13 +237,13 @@ void Manager::RunNowGame()
 		{
 			system("color 7");
 			system("cls");
-			cout << "Victory!" << endl;
+			cout << "The game victory!" << endl;
 			Delay(2000);
 			break;
 		}
 		else
 		{
-			cout << "The game is not over, please continue." << endl;
+			cout << "No winner"<< endl;
 			continue;
 		}
 	}
@@ -259,20 +259,20 @@ void Manager::SetSize()
 	{
 			if (CheckerBoardSize >= 0 && CheckerBoardSize < 5)
 			{
-				cout << "  ->Sorry, it is too small for the size of the board:" << CheckerBoardSize << endl;
-				cout << "  ->This board cannot be generated,  please input '0' and press enter" << endl;
+				cout << "  ->Is too small for the size of the board:" << CheckerBoardSize << endl;
+				cout << "  ->Please input '0' and press enter" << endl;
 				cout << "  ->Please input again need to board size ";
 			}
 			else if (CheckerBoardSize > 15)
 			{
 				cout << "  ->Sorry, the size of the board the maximum is 15 unit!" << endl;
-				cout << "  ->This board cannot be generated, please input '0' and press enter" << endl;
+				cout << "  ->Please input '0' and press enter" << endl;
 				cout << "  ->Please input again need to board size ";
 			}
 			else if (CheckerBoardSize < 0)
 			{
 				cout << "  ->Board size can not be negative!!!!!!" << endl;
-				cout << "  ->This board cannot be generated,  please input '0' and press enter" << endl;
+				cout << "  ->Please input '0' and press enter" << endl;
 				cout << "  ->Please input again need to board size ";
 			}
 			else if (CheckerBoardSize >= 5 && CheckerBoardSize <= 15)
@@ -284,7 +284,7 @@ void Manager::SetSize()
 			x = CheckerBoardSize;
 			cout << endl << endl;
 	}
-	cout << "  ->The setup of the board is successful.: " << CheckerBoardSize << endl;
+	cout << "  ->The size of the board set up successfully: " << CheckerBoardSize << endl;
 }
 
 void Manager::ShowGameInf()
@@ -303,7 +303,7 @@ void Manager::ShowGameInf()
 
 bool Manager::JudgeGame()
 {
-	// Judging horizontal rows
+	//  жϺ   
 	for (int i = 1; i <= CheckerBoardSize; i++)
 	{
 		for (int j = 1; j <= CheckerBoardSize-4; j++)
@@ -319,7 +319,7 @@ bool Manager::JudgeGame()
 		}
 	}
 	
-	//Judging vertical rows
+	// ж     
 	for (int i = 1; i <= CheckerBoardSize - 4; i++)
 	{
 		for (int j = 1; j <= CheckerBoardSize ; j++)
@@ -335,7 +335,7 @@ bool Manager::JudgeGame()
 		}
 	}
 
-	//Judging the main diagonal
+	// ж    Խ   
 	for (int i = CheckerBoardSize; i >= 5 ; i--)
 	{
 		for (int j = 1; j <= CheckerBoardSize - 4; j++)
@@ -351,7 +351,7 @@ bool Manager::JudgeGame()
 		}
 	}
 
-	//Judging the negative diagonal
+	// жϸ  Խ   
 	for (int i = 1, j = CheckerBoardSize; i <= CheckerBoardSize - 4; i++)
 	{
 		for (int j = CheckerBoardSize; j >= CheckerBoardSize - 4; j--)
@@ -373,7 +373,7 @@ void Manager::StorageRouteMax()
 {
 	if (checkerboard == NULL)
 	{
-		cout << "No board, storage failure!" << endl;
+		cout << "No board, failure!" << endl;
 		return;
 	}
 	checkerboard->StorageRoute();
@@ -396,7 +396,7 @@ void Manager::ReadRoute()
 
 	if (!ifs.is_open())
 	{
-		cout << "Test the. TXT file, read failure" << endl;
+		cout << "Test the .TXT file, read failure" << endl;
 		return;
 	}
 
@@ -433,7 +433,7 @@ void Manager::ReadRoute()
 	}
 	ifs.close();
 
-	cout << "Board path has been read! The diagram below: " << endl;
+	cout << " Route has been read! The diagram below: " << endl;
 	checkerboard->Display();
 }
 
@@ -453,7 +453,7 @@ void Manager::AI_and_Person()
 
 	while (1)
 	{
-		// Black go first
+		//       
 		if (checkerboard->ShowRecentStep().GetPlayerId() == -1)
 		{
 			id = BLACK;
@@ -480,7 +480,7 @@ void Manager::AI_and_Person()
 			{
 				if (checkerboard->ShowNode(x1, y1).GetPlayerId() == -1)
 				{
-					cout << "Computer is making a move, please wait." << endl;
+					cout << "Computers are operating, please wait." << endl;
 					Delay(1000);
 					checkerboard->PlaceNode(x1, y1, id);
 					checkerboard->Display();
@@ -494,7 +494,7 @@ void Manager::AI_and_Person()
 					}
 					else
 					{
-						cout << "The game is not over, please continue." << endl;
+						cout << "No winner" << endl;
 						continue;
 					}
 				}
@@ -502,14 +502,14 @@ void Manager::AI_and_Person()
 		}
 		else
 		{
-			cout << "The player" << "，Please enter your move later coordinates:";
+			cout << "The player" << "  Please enter the coordinates of the moving piece";
 			cin >> x >> y;
 
 			Delay(1000);
 			system("cls");
 			if (x > CheckerBoardSize || y > CheckerBoardSize || x < 1 || y < 1)
 			{
-				cout << "The next move is wrong, please input again! (you can return to the menu according to '0')" << endl;
+				cout << "invalid coordinates, please input again! (you can return to the menu by entering '0')" << endl;
 				int choice;
 				cin >> choice;
 				if (choice == 0)
@@ -531,23 +531,23 @@ void Manager::AI_and_Person()
 			{
 				system("color 7");
 				system("cls");
-				cout << "Victory!" << endl;
+				cout << "The game victory!" << endl;
 				Delay(2000);
 				break;
 			}
 			else
 			{
-				cout << "The game is not over, please continue." << endl;
+				cout << "No winner" << endl;
 				continue;
 			}
-			cout << "The player" << "，Please input the coordinates of the next move you want to make:";
+			cout << "The player" << "  Please enter the coordinates of the moving piece";
 			cin >> x >> y;
 
 			Delay(1000);
 			system("cls");
 			if (x > CheckerBoardSize || y > CheckerBoardSize || x < 1 || y < 1)
 			{
-				cout << "The next move is wrong, please input again! (you can return to the menu according to '0')" << endl;
+				cout << "invalid coordinates, please input again! (you can return to the menu by entering '0')" << endl;
 				int choice;
 				cin >> choice;
 				if (choice == 0)
@@ -569,13 +569,13 @@ void Manager::AI_and_Person()
 			{
 				system("color 7");
 				system("cls");
-				cout << "Victory!" << endl;
+				cout << "The game victory!" << endl;
 				Delay(2000);
 				break;
 			}
 			else
 			{
-				cout << "The game is not over, please continue." << endl;
+				cout << "No winner" << endl;
 				continue;
 			}
 		}
