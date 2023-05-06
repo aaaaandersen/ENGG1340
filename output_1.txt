@@ -1,0 +1,486 @@
+                Gobang game menu
+(1) Close the client
+(2) Start a new game
+(3) Set the board size
+(4) Delete the current game
+(5) Enter the current game
+(6) Display game-related information
+(7) The current game archive
+(8) Display the stored route
+(9) The man-machine war
+Enter the Numbers and press enter: 3
+
+Please enter the required board size: 10
+  ->The size of the board set up successfully: 10
+
+-----------------------------------------------
+sh: 1: cls: not found
+sh: 1: color: not found
+                Gobang game menu
+(1) Close the client
+(2) Start a new game
+(3) Set the board size
+(4) Delete the current game
+(5) Enter the current game
+(6) Display game-related information
+(7) The current game archive
+(8) Display the stored route
+(9) The man-machine war
+Enter the Numbers and press enter: 2
+
+sh: 1: cls: not found
+sh: 1: color: not found
+        1       2       3       4       5       6       7       8       9       10
+1       ■       ■       ■       ■       ■       ■       ■       ■       ■       ■
+
+
+
+2       ■       ■       ■       ■       ■       ■       ■       ■       ■       ■
+
+
+
+3       ■       ■       ■       ■       ■       ■       ■       ■       ■       ■
+
+
+
+4       ■       ■       ■       ■       ■       ■       ■       ■       ■       ■
+
+
+
+5       ■       ■       ■       ■       ■       ■       ■       ■       ■       ■
+
+
+
+6       ■       ■       ■       ■       ■       ■       ■       ■       ■       ■
+
+
+
+7       ■       ■       ■       ■       ■       ■       ■       ■       ■       ■
+
+
+
+8       ■       ■       ■       ■       ■       ■       ■       ■       ■       ■
+
+
+
+9       ■       ■       ■       ■       ■       ■       ■       ■       ■       ■
+
+
+
+10      ■       ■       ■       ■       ■       ■       ■       ■       ■       ■
+
+
+
+The player 1  Please enter the coordinates of the moving piece  1 1
+sh: 1: cls: not found
+        1       2       3       4       5       6       7       8       9       10
+1       X       ■       ■       ■       ■       ■       ■       ■       ■       ■
+
+
+
+2       ■       ■       ■       ■       ■       ■       ■       ■       ■       ■
+
+
+
+3       ■       ■       ■       ■       ■       ■       ■       ■       ■       ■
+
+
+
+4       ■       ■       ■       ■       ■       ■       ■       ■       ■       ■
+
+
+
+5       ■       ■       ■       ■       ■       ■       ■       ■       ■       ■
+
+
+
+6       ■       ■       ■       ■       ■       ■       ■       ■       ■       ■
+
+
+
+7       ■       ■       ■       ■       ■       ■       ■       ■       ■       ■
+
+
+
+8       ■       ■       ■       ■       ■       ■       ■       ■       ■       ■
+
+
+
+9       ■       ■       ■       ■       ■       ■       ■       ■       ■       ■
+
+
+
+10      ■       ■       ■       ■       ■       ■       ■       ■       ■       ■
+
+
+
+No winner
+The player 2  Please enter the coordinates of the moving piece  5 6
+sh: 1: cls: not found
+        1       2       3       4       5       6       7       8       9       10
+1       X       ■       ■       ■       ■       ■       ■       ■       ■       ■
+
+
+
+2       ■       ■       ■       ■       ■       ■       ■       ■       ■       ■
+
+
+
+3       ■       ■       ■       ■       ■       ■       ■       ■       ■       ■
+
+
+
+4       ■       ■       ■       ■       ■       ■       ■       ■       ■       ■
+
+
+
+5       ■       ■       ■       ■       ■       O       ■       ■       ■       ■
+
+
+
+6       ■       ■       ■       ■       ■       ■       ■       ■       ■       ■
+
+
+
+7       ■       ■       ■       ■       ■       ■       ■       ■       ■       ■
+
+
+
+8       ■       ■       ■       ■       ■       ■       ■       ■       ■       ■
+
+
+
+9       ■       ■       ■       ■       ■       ■       ■       ■       ■       ■
+
+
+
+10      ■       ■       ■       ■       ■       ■       ■       ■       ■       ■
+
+
+
+No winner
+The player 1  Please enter the coordinates of the moving piece  2 1
+sh: 1: cls: not found
+        1       2       3       4       5       6       7       8       9       10
+1       X       ■       ■       ■       ■       ■       ■       ■       ■       ■
+
+
+
+2       X       ■       ■       ■       ■       ■       ■       ■       ■       ■
+
+
+
+3       ■       ■       ■       ■       ■       ■       ■       ■       ■       ■
+
+
+
+4       ■       ■       ■       ■       ■       ■       ■       ■       ■       ■
+
+
+
+5       ■       ■       ■       ■       ■       O       ■       ■       ■       ■
+
+
+
+6       ■       ■       ■       ■       ■       ■       ■       ■       ■       ■
+
+
+
+7       ■       ■       ■       ■       ■       ■       ■       ■       ■       ■
+
+
+
+8       ■       ■       ■       ■       ■       ■       ■       ■       ■       ■
+
+
+
+9       ■       ■       ■       ■       ■       ■       ■       ■       ■       ■
+
+
+
+10      ■       ■       ■       ■       ■       ■       ■       ■       ■       ■
+
+
+
+No winner
+The player 2  Please enter the coordinates of the moving piece  5 9
+sh: 1: cls: not found
+        1       2       3       4       5       6       7       8       9       10
+1       X       ■       ■       ■       ■       ■       ■       ■       ■       ■
+
+
+
+2       X       ■       ■       ■       ■       ■       ■       ■       ■       ■
+
+
+
+3       ■       ■       ■       ■       ■       ■       ■       ■       ■       ■
+
+
+
+4       ■       ■       ■       ■       ■       ■       ■       ■       ■       ■
+
+
+
+5       ■       ■       ■       ■       ■       O       ■       ■       O       ■
+
+
+
+6       ■       ■       ■       ■       ■       ■       ■       ■       ■       ■
+
+
+
+7       ■       ■       ■       ■       ■       ■       ■       ■       ■       ■
+
+
+
+8       ■       ■       ■       ■       ■       ■       ■       ■       ■       ■
+
+
+
+9       ■       ■       ■       ■       ■       ■       ■       ■       ■       ■
+
+
+
+10      ■       ■       ■       ■       ■       ■       ■       ■       ■       ■
+
+
+
+No winner
+The player 1  Please enter the coordinates of the moving piece  3 1
+sh: 1: cls: not found
+        1       2       3       4       5       6       7       8       9       10
+1       X       ■       ■       ■       ■       ■       ■       ■       ■       ■
+
+
+
+2       X       ■       ■       ■       ■       ■       ■       ■       ■       ■
+
+
+
+3       X       ■       ■       ■       ■       ■       ■       ■       ■       ■
+
+
+
+4       ■       ■       ■       ■       ■       ■       ■       ■       ■       ■
+
+
+
+5       ■       ■       ■       ■       ■       O       ■       ■       O       ■
+
+
+
+6       ■       ■       ■       ■       ■       ■       ■       ■       ■       ■
+
+
+
+7       ■       ■       ■       ■       ■       ■       ■       ■       ■       ■
+
+
+
+8       ■       ■       ■       ■       ■       ■       ■       ■       ■       ■
+
+
+
+9       ■       ■       ■       ■       ■       ■       ■       ■       ■       ■
+
+
+
+10      ■       ■       ■       ■       ■       ■       ■       ■       ■       ■
+
+
+
+No winner
+The player 2  Please enter the coordinates of the moving piece  6 7
+sh: 1: cls: not found
+        1       2       3       4       5       6       7       8       9       10
+1       X       ■       ■       ■       ■       ■       ■       ■       ■       ■
+
+
+
+2       X       ■       ■       ■       ■       ■       ■       ■       ■       ■
+
+
+
+3       X       ■       ■       ■       ■       ■       ■       ■       ■       ■
+
+
+
+4       ■       ■       ■       ■       ■       ■       ■       ■       ■       ■
+
+
+
+5       ■       ■       ■       ■       ■       O       ■       ■       O       ■
+
+
+
+6       ■       ■       ■       ■       ■       ■       O       ■       ■       ■
+
+
+
+7       ■       ■       ■       ■       ■       ■       ■       ■       ■       ■
+
+
+
+8       ■       ■       ■       ■       ■       ■       ■       ■       ■       ■
+
+
+
+9       ■       ■       ■       ■       ■       ■       ■       ■       ■       ■
+
+
+
+10      ■       ■       ■       ■       ■       ■       ■       ■       ■       ■
+
+
+
+No winner
+The player 1  Please enter the coordinates of the moving piece  4 1
+sh: 1: cls: not found
+        1       2       3       4       5       6       7       8       9       10
+1       X       ■       ■       ■       ■       ■       ■       ■       ■       ■
+
+
+
+2       X       ■       ■       ■       ■       ■       ■       ■       ■       ■
+
+
+
+3       X       ■       ■       ■       ■       ■       ■       ■       ■       ■
+
+
+
+4       X       ■       ■       ■       ■       ■       ■       ■       ■       ■
+
+
+
+5       ■       ■       ■       ■       ■       O       ■       ■       O       ■
+
+
+
+6       ■       ■       ■       ■       ■       ■       O       ■       ■       ■
+
+
+
+7       ■       ■       ■       ■       ■       ■       ■       ■       ■       ■
+
+
+
+8       ■       ■       ■       ■       ■       ■       ■       ■       ■       ■
+
+
+
+9       ■       ■       ■       ■       ■       ■       ■       ■       ■       ■
+
+
+
+10      ■       ■       ■       ■       ■       ■       ■       ■       ■       ■
+
+
+
+No winner
+The player 2  Please enter the coordinates of the moving piece  8 8
+sh: 1: cls: not found
+        1       2       3       4       5       6       7       8       9       10
+1       X       ■       ■       ■       ■       ■       ■       ■       ■       ■
+
+
+
+2       X       ■       ■       ■       ■       ■       ■       ■       ■       ■
+
+
+
+3       X       ■       ■       ■       ■       ■       ■       ■       ■       ■
+
+
+
+4       X       ■       ■       ■       ■       ■       ■       ■       ■       ■
+
+
+
+5       ■       ■       ■       ■       ■       O       ■       ■       O       ■
+
+
+
+6       ■       ■       ■       ■       ■       ■       O       ■       ■       ■
+
+
+
+7       ■       ■       ■       ■       ■       ■       ■       ■       ■       ■
+
+
+
+8       ■       ■       ■       ■       ■       ■       ■       O       ■       ■
+
+
+
+9       ■       ■       ■       ■       ■       ■       ■       ■       ■       ■
+
+
+
+10      ■       ■       ■       ■       ■       ■       ■       ■       ■       ■
+
+
+
+No winner
+The player 1  Please enter the coordinates of the moving piece  5 1
+sh: 1: cls: not found
+        1       2       3       4       5       6       7       8       9       10
+1       X       ■       ■       ■       ■       ■       ■       ■       ■       ■
+
+
+
+2       X       ■       ■       ■       ■       ■       ■       ■       ■       ■
+
+
+
+3       X       ■       ■       ■       ■       ■       ■       ■       ■       ■
+
+
+
+4       X       ■       ■       ■       ■       ■       ■       ■       ■       ■
+
+
+
+5       X       ■       ■       ■       ■       O       ■       ■       O       ■
+
+
+
+6       ■       ■       ■       ■       ■       ■       O       ■       ■       ■
+
+
+
+7       ■       ■       ■       ■       ■       ■       ■       ■       ■       ■
+
+
+
+8       ■       ■       ■       ■       ■       ■       ■       O       ■       ■
+
+
+
+9       ■       ■       ■       ■       ■       ■       ■       ■       ■       ■
+
+
+
+10      ■       ■       ■       ■       ■       ■       ■       ■       ■       ■
+
+
+
+sh: 1: color: not found
+sh: 1: cls: not found
+The game victory
+
+-----------------------------------------------
+sh: 1: cls: not found
+sh: 1: color: not found
+                Gobang game menu
+(1) Close the client
+(2) Start a new game
+(3) Set the board size
+(4) Delete the current game
+(5) Enter the current game
+(6) Display game-related information
+(7) The current game archive
+(8) Display the stored route
+(9) The man-machine war
+Enter the Numbers and press enter:
