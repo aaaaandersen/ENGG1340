@@ -1,4 +1,4 @@
-﻿#include "CheckerBoard.h"
+﻿#include "CheckerBoard1.h"
 
 CheckerBoard::CheckerBoard(int size)
 {
