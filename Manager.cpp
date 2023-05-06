@@ -410,7 +410,7 @@ void Manager::ReadRoute()
 		xx = buf.substr(0, 1);
 		int j = 0;
 		string s = " ";
-		for (int i = 0; i < size(buf); i++)
+		for (int i = 0; i < buf.size(); i++)
 		{
 			string s2 = buf.substr(i, 1);
 			if (s.compare(s2) == 0)
